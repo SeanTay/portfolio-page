@@ -1,38 +1,80 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+@import 'https://fonts.googleapis.com/css?family=Raleway:300,400,700';
+html, body {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  -webkit-font-smoothing: subpixel-antialiased; }
 
-html {
-  height: 100%;
-}
+.content {
+  background-color: #e5e5e5;
+  padding: 1em 0 0;
+  position: relative;
+  top: 100vh;
+  color: #333; }
 
-body{
-  font-family: utopia, sans-serif;
-  height: 100%;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #FFFFFF;
-  color: #000000;
-}
+.container {
+  max-width: 75%;
+  margin: 4em auto; }
 
-h3 {
-  ;
-  padding: 0;
-}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  background-color: #333333;
+  background-image: url(http://www.kbtours.com/wp-content/uploads/2015/08/DC-Night-Tour.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+  header .btn {
+    border-width: 0;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+    padding: 10px 15px;
+    background-color: #2ecc71;
+    color: #ecf0f1;
+    font-size: 12px;
+    transition: background-color 0.3s; }
+  header .btn:hover, header .btn:focus {
+    background-color: #27ae60; }
+  header input {
+    padding: 5px 10px; }
+  header i {
+    margin-right: 10px; }
+  header img {
+    height: 180px;
+    border-radius: 100%; }
+  header .site-header {
+    font-size: 6rem;
+    margin: 0; }
+  header .summary {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: capitalize; }
 
-#first-container {
-  height: 100%;
-  background-color: red;
-}
+.section-header {
+  font-size: 2rem;
+  text-align: center; }
 
-#second-container {
-  height: 60%;
-  background-color: blue;
-}
+hr {
+  width: 25vw; }
 
-#third-container {
-  height: 100%;
-  background-color: green;
-}
+footer {
+  background-color: #222;
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.95rem; }
+  footer .container {
+    margin: 0 auto; }
+  footer .copyright {
+    padding: 4em 0; }
+
+/*# sourceMappingURL=style.css.map */
