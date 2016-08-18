@@ -32,6 +32,14 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center; }
+  header .contact {
+    color: white; }
+  header a {
+    text-decoration: none;
+    decoration: none; }
+  header a:visited {
+    text-decoration: none;
+    decoration: none; }
   header .btn {
     border-width: 0;
     outline: none;
