@@ -1,7 +1,7 @@
-@import 'https://fonts.googleapis.com/css?family=Raleway:300,400,700';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,700';
 html, body {
   color: white;
-  font-family: "Raleway", sans-serif;
+  font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: subpixel-antialiased; }
 
 .content {
@@ -12,7 +12,7 @@ html, body {
   color: #333; }
 
 .container {
-  max-width: 75%;
+  max-width: 65%;
   margin: 4em auto; }
 
 header {
@@ -27,6 +27,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  background-filter: blur(5px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,12 +35,6 @@ header {
   text-align: center; }
   header .contact {
     color: white; }
-  header a {
-    text-decoration: none;
-    decoration: none; }
-  header a:visited {
-    text-decoration: none;
-    decoration: none; }
   header .btn {
     border-width: 0;
     outline: none;
@@ -60,7 +55,7 @@ header {
     height: 180px;
     border-radius: 100%; }
   header .site-header {
-    font-size: 6rem;
+    font-size: 5rem;
     margin: 0; }
   header .summary {
     font-size: 1.5rem;
