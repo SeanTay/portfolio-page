@@ -33,20 +33,10 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center; }
+  header a {
+    color: white; }
   header .contact {
     color: white; }
-  header .btn {
-    border-width: 0;
-    outline: none;
-    border-radius: 2px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
-    padding: 10px 15px;
-    background-color: #2ecc71;
-    color: #ecf0f1;
-    font-size: 12px;
-    transition: background-color 0.3s; }
-  header .btn:hover, header .btn:focus {
-    background-color: #27ae60; }
   header input {
     padding: 5px 10px; }
   header i {
@@ -69,6 +59,21 @@ header {
 hr {
   width: 25vw; }
 
+.btn {
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  padding: 10px 15px;
+  background-color: #2ecc71;
+  color: #ecf0f1;
+  font-size: 12px;
+  text-decoration: none;
+  transition: background-color 0.3s; }
+
+.btn:hover, .btn:focus {
+  background-color: #27ae60; }
+
 .all_projects {
   display: flex;
   flex-direction: row;
@@ -85,7 +90,7 @@ hr {
   margin: 20px;
   z-index: 2;
   height: 400px;
-  width: 468px;
+  width: 400px;
   border-radius: 10px; }
 
 .project_name {
@@ -100,10 +105,7 @@ hr {
 
 .project_description {
   background-color: white;
-  flex: 1;
-  padding: 1rem 0;
-  max-width: 100%;
-  max-height: 100%; }
+  padding: 2rem 1rem; }
 
 .project:hover .project_name {
   left: -120%; }
@@ -112,11 +114,10 @@ footer {
   background-color: #222;
   color: rgba(255, 255, 255, 0.75);
   text-align: center;
-  font-weight: 700;
-  font-size: 0.95rem; }
+  font-size: 1.2rem; }
   footer .container {
     margin: 0 auto; }
   footer .copyright {
-    padding: 4em 0; }
+    padding: 2em 0; }
 
 /*# sourceMappingURL=style.css.map */
