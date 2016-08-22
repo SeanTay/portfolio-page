@@ -12,11 +12,15 @@ html, body
   position: relative
   top: 100vh
   color: #333
+  width: 100%
 
 
 .container
   max-width: 65%
   margin: 4em auto
+
+.about-me
+  padding: 20px
 
 header
   position: fixed
@@ -31,7 +35,6 @@ header
     size: cover
     repeat: no-repeat
     position: center center
-    filter: blur(5px)
   display: flex
   flex-direction: column
   align-items: center
@@ -88,9 +91,12 @@ hr
 .all_projects
   display: flex
   flex-direction: row
+  flex-wrap: wrap
   margin: 20px auto
   min-width: 320px
   max-width: 1100px
+  align-items: center
+  justify-content: center
 
 .project
   cursor: pointer
@@ -102,7 +108,9 @@ hr
   z-index: 2
   height: 400px
   width: 400px
+  min-width: 400px
   border-radius: 10px
+  box-shadow: 5px 5px 5px #B3B3B3
 
 
 .project_name
@@ -120,16 +128,27 @@ hr
   background-color: white
   padding: 2rem 1rem
 
-
-
 .project:hover
   .project_name
     left: -120%
 
+// @media screen and (min-width: 500px)
+//   .all_projects
+//     flex-direction: row
+//     flex-wrap: wrap
+//     width: 90%
+//
+//   .project
+//     margin: .5rem 1%
+//     width: 48%
+//
+//   .project_name
+//     width: 100%
+
 // End of my work section
 
 footer
-  background-color: #222
+  background-color: #B3B3B3
   color: rgba(#fff, 0.75)
   text-align: center
   font-size: 1.2rem

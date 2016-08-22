@@ -9,11 +9,15 @@ html, body {
   padding: 1em 0 0;
   position: relative;
   top: 100vh;
-  color: #333; }
+  color: #333;
+  width: 100%; }
 
 .container {
   max-width: 65%;
   margin: 4em auto; }
+
+.about-me {
+  padding: 20px; }
 
 header {
   position: fixed;
@@ -27,7 +31,6 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-filter: blur(5px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -77,9 +80,12 @@ hr {
 .all_projects {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   margin: 20px auto;
   min-width: 320px;
-  max-width: 1100px; }
+  max-width: 1100px;
+  align-items: center;
+  justify-content: center; }
 
 .project {
   cursor: pointer;
@@ -91,7 +97,9 @@ hr {
   z-index: 2;
   height: 400px;
   width: 400px;
-  border-radius: 10px; }
+  min-width: 400px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #B3B3B3; }
 
 .project_name {
   position: absolute;
@@ -111,7 +119,7 @@ hr {
   left: -120%; }
 
 footer {
-  background-color: #222;
+  background-color: #B3B3B3;
   color: rgba(255, 255, 255, 0.75);
   text-align: center;
   font-size: 1.2rem; }
